@@ -83,9 +83,13 @@ Gryc, George, Ed., 1988, Geology and exploration of the National Petroleum
 The stratigraphics information is used in the interpretation of the well log data.
 ## 3) Implementation
 The analysis of the well logs will be carried out using Python.
+
 packages: wget, bash, numpy, matplotlib, lasio and pandas
+
 wget package will be used to efficiently download the .LAS and .txt file for this project.
 LAS is a file format cannot be used in the python programming language. `lasio` is a package built to solve this problem of analysis of LAS files. The lasio package will be utilized to read the LAS file and convert it into a DataFrame using pandas. The pandas package makes for the easy wrangling and utilization of spreadsheet data (i.e data with rows and columns). matplotlib will be utilize to display the logs.
+
+## 4) Expected Products
 ### Displaying the logs
 To visualize the curves using the triple-combo display format (which is the widely used industry format), matplotlib package will be used.
 This triple combo display will be made up of three tracks with some related logs plotted on the same track. The first track will have the Gamma Ray log (GR), Self-Potential log (SP) and Caliper log (CALI), the second track will consist of the various types of Resistivity logs (IL8, ILM, ILD), and the third track will have the Density log (RHOB), Sonic log (DT) and Neutron log (NPHI).
@@ -93,4 +97,4 @@ This triple combo display will be made up of three tracks with some related logs
 On this log, the stratigraphic interval will be plotted at the corresponding depth and labelled accordingly.
 
 In the next code lines, we will set the template.
-## 4) Expected Products
+# Image
