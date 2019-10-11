@@ -1,4 +1,4 @@
-# Petrophysical Analysis using Data Analytics
+# Application of Data Science to Petrophysical Analysis
 ## 1) Objectives
 The aim of this project is to carry out basic petrophysical analysis on well logs.
 ## 2) Data Sources
