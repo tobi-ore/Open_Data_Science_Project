@@ -121,7 +121,7 @@ The volume of shale (Vshale) is expressed as a decimal fraction or percentage. I
 Calculation of the gamma ray index is the first step needed to determine the volume of shale from GR log. `IGR=(GR_log-GR_min)/(GR_max-GR_min)`
 The Vshale is then computed using the Larionov (1969), Clavier (1971) and Steiber (1969) non-linear relationships.
    
-   ```
+```
     Vshale_larionov_young=0.083*(2**(3.7*IGR)-1)   #Larionov (1969) - Tertiary rocks
     
     Vshale_larionov_old=0.33*(2**(2*IGR)-1)        #Larionov (1969) - Older rocks
@@ -129,9 +129,27 @@ The Vshale is then computed using the Larionov (1969), Clavier (1971) and Steibe
     Vshale_clavier=1.7-(3.38-(IGR+0.7)**2)**0.5    #Clavier (1971)
     
     Vshale_steiber=IGR/(3-(2*IGR))                 #Steiber (1969)
-    ```
- Using the SP log, the Vshale will be computed using this relationship `Vshale_sp=(SP_log-SP_clean)/(SP_clay-SP_clean)`
- The expected result of this computation is to be appended to the data creating new columns called __Vshale__ and the curves for all the returned Vshale methods will be plotted on the same track for comparison.
+```
+Using the SP log, the Vshale will be computed using this relationship `Vshale_sp=(SP_log-SP_clean)/(SP_clay-SP_clean)`
+The expected result of this computation is to be appended to the data creating new columns called __Vshale__ and the curves for all the returned Vshale methods will be plotted on the same track for comparison.
  
 ### Estimating Porosity
+Porosity is a very important parameter when it comes to reservoir characetrization. There are several ways of estimating porosity from well logs. In this project, the Neutron-Density method will be utilized.
+Density porosity is estimated by using `PHID = (RHOB - DENSma) / (DENSw - DENSma)` and the NPHI is the Neutron porosity.
+The Neutron-Density Porosity is then estimated using the relationship below:
+```
+PHIND= (PHID + NPHI) / 2      #for interval without gas
+PHIND= ((PHID**2+NPHI**2)/2)**(0.5)   #for interval with gas as seen from crossover
+```
+The result of this step is appended to the data as a new column called PHIND
+
+### Calculating Water Saturation
+Water Saturation (SW) will be calculated by using the Archie equation.
+```
+SW**n = (a * RW) / (RT * PHIND**m)
+Where: a is the turtuosity factor
+       m is the cementation factor
+       n is the saturation exponent
+```
+The result of the calculated water saturation will be validated using a pickett plot which is a crossplot of resistivity and porosity. An example of this plot is shown below:
 
