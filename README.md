@@ -115,3 +115,19 @@ This triple combo display will be made up of three tracks with some related logs
 The data will be analysed using some basic statistical techniques and the result will be displayed as shown below:
 
 ![Statistical Analysis](./Proposal_Images/statistical_description.JPG)
+### Calculating Volume of Shale
+The volume of shale (Vshale) is expressed as a decimal fraction or percentage. It is usually the first step of well log analysis. There are several methods of calculating Vshale. In this project, the GR and SP methods will be used.
+
+Calculation of the gamma ray index is the first step needed to determine the volume of shale from GR log. `IGR=(GR_log-GR_min)/(GR_max-GR_min)`
+The Vshale is then computed using the Larionov (1969), Clavier (1971) and Steiber (1969) non-linear relationships.
+    ```
+    Vshale_larionov_young=0.083*(2**(3.7*IGR)-1)   #Larionov (1969) - Tertiary rocks
+    Vshale_larionov_old=0.33*(2**(2*IGR)-1)        #Larionov (1969) - Older rocks
+    Vshale_clavier=1.7-(3.38-(IGR+0.7)**2)**0.5    #Clavier (1971)
+    Vshale_steiber=IGR/(3-(2*IGR))                 #Steiber (1969)
+    ```
+ Using the SP log, the Vshale will be computed using this relationship `Vshale_sp=(SP_log-SP_clean)/(SP_clay-SP_clean)`
+ The expected result of this computation is to be appended to the data creating new columns called __Vshale__ and the curves for all the returned Vshale methods will be plotted on the same track for comparison.
+ 
+### Estimating Porosity
+
