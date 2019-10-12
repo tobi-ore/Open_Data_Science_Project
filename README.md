@@ -152,4 +152,4 @@ Where: a is the turtuosity factor
        n is the saturation exponent
 ```
 The result of the calculated water saturation will be validated using a pickett plot which is a crossplot of resistivity and porosity. An example of this plot is shown below:
-
+![Pickett Plot](./Proposal_Images/Pickett_plot.JPG)
