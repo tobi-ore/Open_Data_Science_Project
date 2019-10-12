@@ -87,7 +87,7 @@ The analysis of the well logs will be carried out using Python.
 packages: wget, bash, numpy, matplotlib, lasio and pandas
 
 wget package will be used to efficiently download the .LAS and .txt file for this project.
-LAS is a file format cannot be used in the python programming language. `lasio` is a package built to solve this problem of analysis of LAS files. The lasio package will be utilized to read the LAS file and convert it into a DataFrame using pandas. The pandas package makes for the easy wrangling and utilization of spreadsheet data (i.e data with rows and columns). matplotlib will be utilize to display the logs.
+LAS is a file format cannot be used in the python programming language. `lasio` is a package built to solve this problem of analysis of LAS files (documentation can be found here: https://buildmedia.readthedocs.org/media/pdf/lasio/latest/lasio.pdf). The lasio package will be utilized to read the LAS file and convert it into a DataFrame using pandas. The pandas package makes for the easy wrangling and utilization of spreadsheet data (i.e data with rows and columns). matplotlib will be utilize to display the logs.
 
 ## 4) Expected Products
 ### Displaying the logs
