@@ -123,7 +123,10 @@ The data will be analysed using some basic statistical techniques for quick-look
 ### e) Calculating Volume of Shale
 The volume of shale (Vshale) is expressed as a decimal fraction or percentage. It is usually the first step of well log analysis. There are several methods of calculating Vshale. In this project, the GR and SP methods will be used.
 
-Calculation of the gamma ray index is the first step needed to determine the volume of shale from GR log. `IGR=(GR_log-GR_min)/(GR_max-GR_min)`
+Calculation of the gamma ray index is the first step needed to determine the volume of shale from GR log. 
+
+`IGR=(GR_log-GR_min)/(GR_max-GR_min)`
+
 The Vshale is then computed using the Larionov (1969), Clavier (1971) and Steiber (1969) non-linear relationships.
    
 ```
