@@ -104,7 +104,7 @@ WALAKPA 1         Basement Complex                             3630
 ```
 ### Visualization of the data in pandas
 As earlier mentioned, the LAS file is in a unique format that python and most programming languages can't read appropriately. However, the lasio package is used to convert the LAS file into a DataFrame that python understands. After series data manipulation, the data which will be used for the analysis will look like below. Compare this with the LAS format above and notice the difference.
-![Panda_dataframe display](r'Open_Data_Science_Project/Proposal Images/Panda_dataframe display.JPG')
+![Panda_dataframe display](./Proposal_Images/Panda_dataframe_display.JPG)
 ### Displaying the logs
 To visualize the curves using the triple-combo display format (which is the widely used industry format), matplotlib package will be used.
 This triple combo display will be made up of three tracks with some related logs plotted on the same track. The first track will have the Gamma Ray log (GR), Self-Potential log (SP) and Caliper log (CALI), the second track will consist of the various types of Resistivity logs (IL8, ILM, ILD), and the third track will have the Density log (RHOB), Sonic log (DT) and Neutron log (NPHI).
