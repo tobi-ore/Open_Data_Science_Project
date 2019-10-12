@@ -120,7 +120,8 @@ The volume of shale (Vshale) is expressed as a decimal fraction or percentage. I
 
 Calculation of the gamma ray index is the first step needed to determine the volume of shale from GR log. `IGR=(GR_log-GR_min)/(GR_max-GR_min)`
 The Vshale is then computed using the Larionov (1969), Clavier (1971) and Steiber (1969) non-linear relationships.
-    ```
+   
+   ```
     Vshale_larionov_young=0.083*(2**(3.7*IGR)-1)   #Larionov (1969) - Tertiary rocks
     
     Vshale_larionov_old=0.33*(2**(2*IGR)-1)        #Larionov (1969) - Older rocks
