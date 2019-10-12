@@ -110,7 +110,7 @@ As earlier mentioned, the LAS file is in a unique format that python and most pr
 To visualize the curves using the triple-combo display format (which is the widely used industry format), matplotlib package will be used.
 This triple combo display will be made up of three tracks with some related logs plotted on the same track. The first track will have the Gamma Ray log (GR), Self-Potential log (SP) and Caliper log (CALI), the second track will consist of the various types of Resistivity logs (IL8, ILM, ILD), and the third track will have the Density log (RHOB), Sonic log (DT) and Neutron log (NPHI).On this log, the stratigraphic interval will be plotted at the corresponding depth and labelled accordingly.
 
-![Triple Combo Display](./Proposal_Images/WA1_triple_combo_plot.png)
+![Triple Combo Display](./Proposal_Images/WA1_curve_plot.png)
 ### Basic Statistical Analysis
 The data will be analysed using some basic statistical techniques and the result will be displayed as shown below:
 
