@@ -162,3 +162,6 @@ Where: a is the turtuosity factor
 The result of the calculated water saturation will be validated using a pickett plot which is a crossplot of resistivity and porosity. An example of this plot is shown below:
 
 ![Pickett Plot](./Proposal_Images/Pickett_plot.JPG)
+
+### e) Spreadsheet containing new data
+All the estimated values will be appended to the data and saved in a new excel spreadsheet document.
