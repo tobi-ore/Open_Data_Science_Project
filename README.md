@@ -164,4 +164,5 @@ The result of the calculated water saturation will be validated using a pickett 
 ![Pickett Plot](./Proposal_Images/Pickett_plot.JPG)
 
 ### e) Spreadsheet containing new data
-All the estimated values will be appended to the data and saved in a new excel spreadsheet document.
+All the estimated values will be appended to the data and saved in a new text document.
+Keep the output in a software-independent format - csv or txt.
